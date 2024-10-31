@@ -1,0 +1,636 @@
+<html>
+<head>
+<meta name="keywords" content="Incas,INCAS,INCAS DEL PERU,PERU,Peru,peru,Incas del Peru,Lucho Hurtado,Travel Peru,Learning Center,Huancayo,Cuzco,Peruvian Culture,Full Service Travel,Spanish Courses,adventure,discovery,central highlands,lonely planet,
+Incas,INCAS,INCAS DEL PERU,PERU,Peru,peru,Incas del Peru,Lucho Hurtado,Travel Peru,Learning Center,Huancayo,Cuzco,Peruvian Culture,Full Service Travel,Spanish Courses,adventure,discovery,central highlands,lonely planet
+Reizen, Educatie centrum, Peruaanse cultuur, vol service Reis, cursus spaans/spaanse cursussen, avontuur, ontdekking, centrale Hooglanden,Toerisme,Vrijwilligerswerk,Cursus spaans, weven, panfluiten, Peruaans koken,Tours, Wandelingen, mountainbiken, condor, kamperen, hostel la casa de la abuela, overnachtingen,Peru, Peru Andino, Guest house, accomodation in Peru, Bed &amp; Breakfast, Homestays, Home stays, trips, Travel to Peru, Peru Tours, Peru Tour, Peru Tours, Peru Hotel, Peru Travel Tour, Travel Peru Tours, Peru Travel Guide, Peru domestic flights, Peru bus, Peru Travel discounts, Peru Hotel discounts, Peru tour and vacation, Peru lodging, book Peruvian flights, Peru bus ticket center, how to arrive to Peru, Peru top ten destinations, Peru archaeological guide, Peru Nature, Peru Biodiversity, Peru adventure, Peru Sports, Machu Picchu Travel Guide, Peru Map Gallery, Peru Photo Gallery, Peru free wallpapers, Peru tips for travelers, Peru Official Travel Planning Web site, Cuzco Travel Guide, Nazca Lines, Peru world heritage sites, Visa offersSpanish school. spanish lessons, peruvian culture, courses, spanish courses">
+<meta name="description" content="INCAS DEL PERU is a FULL-SERVICE TRAVEL and LEARNING CENTER. We offers you the benefits of more than 20 years of guiding and cultural exchange undertaken by Lucho Hurtado.">
+<meta http-equiv="imagetoolbar" content="false" />
+<bgsound src="sonido/TOROVELAY.mp3" loop="-1">
+<meta name="author" content="rosariommq@yahoo.es">
+<meta name="copyright" content="Copyright 2001 Incas del Peru. All Rights Reserved">
+<title>Incas del Peru - Home Page</title>
+<link rel="stylesheet" type="text/css" href="http://www.incasdelperu.com/styles/Estilos.css">
+<script LANGUAGE="javascript">
+<!--
+function goTrip(){
+var strGo;
+strGo = document.frmTrips.cmbTrip.options[document.frmTrips.cmbTrip.selectedIndex].value;
+	switch(strGo){
+		case "ARCHAEOLOGICAL CIRCUIT":
+			document.location.href="Daytrip.htm#arch";
+			break;
+		case "ARTESAN CIRCUIT":
+			document.location.href="Daytrip.htm#artesan";
+			break;
+		case "BIKING TRIP 12 DAYS":
+			document.location.href="Biking.htm#12";
+			break;
+		case "BIKING ONE DAY EXCURSION":
+			document.location.href="Biking.htm#1";
+			break;
+		case "BIKING AND CAMPING, 2 DAYS":
+			document.location.href="Biking.htm#2";
+			break;
+		case "CAMINO HUANCA":
+			document.location.href="Mountain.htm#c";
+			break;
+		case "HUAYTAPALLANA TREK - 1 DAY":
+			document.location.href="Mountain.htm#1";
+			break;
+		case "HUAYTAPALLANA: 2 DAYS, 1 NIGHT EXCURSION":
+			document.location.href="Mountain.htm#2";
+			break;
+		case "HUAYTAPALLANA 3 DAY TREK":
+			document.location.href="Mountain.htm#3";
+			break;
+		case "HIGH JUNGLE TRIP":
+			document.location.href="jungle.htm#high";
+			break;
+		case "CONDOR FLIGHT TOUR":
+			document.location.href="Discovery.htm#condor";
+			break;
+		case "DISCOVERY WEAVING TRIP":
+			document.location.href="Discovery.htm#weaving";
+			break;
+		case "ESOTERIC JOURNEY":
+			document.location.href="Discovery.htm#esoteric";
+			break;
+		case "INCAS SPECIAL COMBINATION TOUR":
+			document.location.href="Discovery.htm#special";
+			break;
+		case "INKARY JOURNEY":
+			document.location.href="Discovery.htm#inkary";
+			break;
+	}
+}
+//---------------------------------------
+function search()
+{
+if (document.frmsearch.terms.value=='')
+	{
+	alert("Enter key to search");
+	document.frmsearch.terms.focus();
+	return false;
+	}
+
+if (document.frmsearch.terms.value.length<3)
+	{
+	alert("The minimum characters to search are three.");
+	document.frmsearch.terms.focus();
+	return false;
+	}
+	document.frmsearch.submit();
+}
+
+function isEmail(emailStr) {
+	/* The following variable tells the rest of the function whether or not
+	to verify that the address ends in a two-letter country or well-known
+	TLD.  1 means check it, 0 means don't. */
+
+	var checkTLD=1;
+	var knownDomsPat=/^(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum)$/;
+	var emailPat=/^(.+)@(.+)$/;
+	var specialChars="\\(\\)><@,;:\\\\\\\"\\.\\[\\]";
+	var validChars="\[^\\s" + specialChars + "\]";
+	var quotedUser="(\"[^\"]*\")";
+	var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;
+	var atom=validChars + '+';
+	var word="(" + atom + "|" + quotedUser + ")";
+	var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+	var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+	var matchArray=emailStr.match(emailPat);
+	if (matchArray==null) {
+	alert("Email address seems incorrect (check @ and .'s)");
+	return false;
+	}
+	var user=matchArray[1];
+	var domain=matchArray[2];
+	for (i=0; i<user.length; i++) {
+	if (user.charCodeAt(i)>127) {
+	alert("This username contains invalid characters.");
+	return false;
+	   }
+	}
+	for (i=0; i<domain.length; i++) {
+	if (domain.charCodeAt(i)>127) {
+	alert("This domain name contains invalid characters.");
+	return false;
+	   }
+	}
+	if (user.match(userPat)==null) {
+	alert("The username doesn't seem to be valid.");
+	return false;
+	}
+	var IPArray=domain.match(ipDomainPat);
+	if (IPArray!=null) {
+	for (var i=1;i<=4;i++) {
+	if (IPArray[i]>255) {
+	alert("Destination IP address is invalid!");
+	return false;
+	   }
+	}
+	return true;
+	}
+	var atomPat=new RegExp("^" + atom + "$");
+	var domArr=domain.split(".");
+	var len=domArr.length;
+	for (i=0;i<len;i++) {
+	if (domArr[i].search(atomPat)==-1) {
+	alert("The domain name does not seem to be valid.");
+	return false;
+	   }
+	}
+
+	if (checkTLD && domArr[domArr.length-1].length!=2 &&
+	domArr[domArr.length-1].search(knownDomsPat)==-1) {
+	alert("The address must end in a well-known domain or two letter " + "country.");
+	return false;
+	}
+	if (len<2) {
+	alert("This address is missing a hostname!");
+	return false;
+	}
+	return true;
+}
+
+function SendEmail()
+{
+if (!isEmail(document.frmsubscription.txtemail.value))
+	{
+	alert("EMail is Invalid.");
+	document.frmsubscription.txtemail.focus();
+	return false;
+	}
+	document.frmsubscription.submit();
+
+}
+
+function detailnews(codigo)
+{
+  document.frmPrincipal.hidNewsIdDetail.value=codigo;
+  document.frmPrincipal.action="NewsDetails.asp";
+  document.frmPrincipal.submit();
+}
+
+function removespace(cad){
+	while (cad.indexOf(' ')==0){
+		cad=cad.substr(1,cad.length-1);
+	}
+	return cad
+}
+
+function validatesubscribe()
+{
+	if (!btn_subscribe_click())
+	{
+		return;
+	}
+document.frmsubscription.submit();
+}
+
+function btn_subscribe_click()
+{
+    document.frmsubscription.txtemail.value=removespace(document.frmsubscription.txtemail.value)
+	document.frmsubscription.txtemail.focus();
+	if (!isEmail(document.frmsubscription.txtemail.value))
+	{
+		document.frmsubscription.txtemail.focus();
+		return false;
+	}
+	return true
+}
+
+function EnviarEmail(strEmail)
+{
+document.frmEnviarEmail.hidstrEmail.value = strEmail;
+document.frmEnviarEmail.submit();
+}
+//-->
+</script>
+<script language="JavaScript" src="http://www.incasdelperu.com/jscript/incas.js" type="text/javascript"></script>
+</head>
+<body Onload="javascript:document.frmsearch.terms.focus();" BGCOLOR="white" LEFTMARGIN="0" topmargin="0" marginwidth="0" marginheight="0"><!-- ImageReady Slices (topPaisaje.psd) -->
+<table CELLPADDING="0" CELLSPACING="0" border="0">
+<tr>
+<td colspan="2"><img height="1" src="images/1px.gif" width="780"></td>
+</tr>
+	<tr><td>
+		<table BORDER="0" CELLPADDING="0" CELLSPACING="0"><!--  width="700" -->
+		  <tr>
+		  <td ><a title="INCAS DEL PERU" href="default.htm">
+		  <img alt="INCAS DEL PERU" src="images/cabecera.jpg" border="0"></a></td>
+		  <td  width=450>
+                  <img src="images/cabecera2.jpg" border="0" align=CENTER>
+                  </td>
+		  </tr>
+		</table><!-- End ImageReady Slices -->
+	</td><!-- -->
+	<td>
+		<table cellPadding="0" cellSpacing="0" BORDER="0"><!-- BACKGROUND="images/ext2.jpg"-->
+        <tr>
+		<td BACKGROUND="images/cabecera3.jpg" HEIGHT="116" WIDTH="310">&nbsp;</td></tr>
+		</table>
+	</td><!-- -->
+	</tr>
+</table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<tr><td class="barraverde" bgcolor="darkgreen">&nbsp;</td></tr>
+<tr>
+<td><img height="1" src="images/1px.gif" width="780"></td>
+</tr>
+</table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%"><tr><td class="barrablanca" bgcolor="white">&nbsp;</td></tr></table><!-- -->
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td width="473"><img height="34" src="images/MenuPaisaje_01.jpg"></td>
+	<td width="100%" background="images/menu02.jpg"><img height="34" src="images/menu02.jpg" width="108"></td><!-- -->
+    <td width="199"><img src="images/Menu03.jpg" width="200"></td>
+  </tr>
+</table><!-- -->
+
+<table border="0" cellPadding="0" cellSpacing="0" style="FONT-FAMILY: ">
+<tr>
+   <td valign="top">
+   				<table BORDER="0" CELLPADDING="0" CELLSPACING="0" background="images/bk_menu.jpg">
+					<tr>
+						<td nowrap>
+                        <FORM name=frmsearch METHOD=POST ACTION="http://incasdelperu.com/cgi-bin/IncasSearch.pl">                     <input type=hidden name="boolean" value="all terms">
+                     <input type=hidden name="hits" value="10">
+							<font color="white" face="Comic Sans MS" size="1"><strong>
+							&nbsp;Search: <br>&nbsp;<input name="terms" size="7">&nbsp;
+							</strong></font>&nbsp;<input alt="search" border="0" src="http://www.incasdelperu.com/images/search.jpg" type="image" id="image1" name="image1" width="26" height="26">
+                   
+						</td>
+					</tr>
+               </form>
+					<tr>
+						<td valign="top" colspan="2">
+							<a href="index.htm"><img height="28" src="images/Home_on.jpg" width="141" border="0"></a><br>
+							<a href="album/AlbumHome.html"><img height="28" src="images/photo.jpg" width="141" border="0"></a><br>
+							<a href="aboutus.htm"><img height="28" src="images/about_us.jpg" width="141" border="0"></a><br>
+							<a href="InfoFact.htm"><img height="28" src="images/travelling.jpg" width="141" border="0"></a><br>
+							<a href="language.htm"><img height="28" src="images/courses.jpg" width="141" border="0"></a><br>
+							<a href="TripList.htm"><img height="28" src="images/trips.jpg" width="141" border="0"></a><br>
+							<a href="reservation.htm"><img height="28" src="images/reservations.jpg" width="141" border="0"></a><br>
+							<a href="volunteers.htm"><img height="28" src="images/volunteer.jpg" width="141" border="0"></a><br>
+							<a href="allnews.htm"><img height="28" src="images/News.gif" width="141" border="0"></a><br>							
+							<a href="casa.htm"><img height="28" src="images/casa.jpg" width="141" border="0"></a><br>
+							<a href="service.htm"><img height="28" src="images/services.jpg" width="141" border="0"></a><br>
+							<a href="cab.htm"><img height="28" src="images/cabana.jpg" width="141" border="0"></a><br>
+							<a href="lado.htm"><img height="28" src="images/LADO.jpg" width="141" border="0"></a><br>
+							<a href="recommend.htm"><img height="28" src="images/recommended.jpg" width="141" border="0"></a><br>
+							<a href="testimonial.htm"><img height="28" src="images/testimonials.jpg" width="141" border="0"></a><br>
+							<a href="faq.htm"><img height="28" src="images/faq.jpg" width="141" border="0"></a><br>
+							<a href="BBSHomePage.htm"><img height="28" src="images/Bulletin.jpg" width="141" border="0"></a><br>
+							<a href="help.htm"><img height="28" src="images/help.jpg" width="141" border="0"></a><br>
+							<a href="statusofthetrain.htm"><img height="28" src="images/train_trips.jpg" width="141" border="0"></a><br>															
+							<a href="contact.htm"><img height="28" src="images/contact.jpg" width="141" border="0"></a><br>
+<a href="Links.htm"><img height="28" src="images/Links.jpg" width="141" border="0"></a>
+						</td>
+					</tr>
+					<tr><td colspan="2"><img height="39" src="images/MenuPaisaje_07.jpg" width="141"></td></tr>
+				</table>
+			</form>
+	<p>
+<!--		I would like to receive news from <strong> 
+		<font size="1"><font color="chocolate" size="2">INCAS DEL PERU.</font></font><br></strong>Please enter your
+		EMail:  <br><input name="txtemail" size="15"><br>
+		<input border="0" type="image" height="30" cache src="images/btn_sendmail.jpg" width="72" id="image2" name="image2">&nbsp;</p>-->
+<br>
+<center><table border=0 CELLPADDING="0" CELLSPACING="0">
+<tr>
+<td>
+<img  src="titu/with.gif" border=0>
+<center><a href="http://www.cuy-arts.com" target=_blank"><img  src="titu/cuy.jpg" border=0 ></a>
+<a href="http://www.cruzdelsur.com.pe" target=_blank"><img src="titu/cruzdelsur.jpg" width=130 border=0></A></center>
+</td>
+</tr>
+</table></center>
+
+<br>
+<br><center>
+<table border=0 CELLPADDING="0" CELLSPACING="0">
+<tr>
+<td colspan=4>
+
+<img src="titu/membersof.gif" border=0></center>
+<a href="http://www.saexplorer.org" target=_blank"><center><img src="titu/sae.jpg" border=0></center>
+</td>
+</tr>
+</table>
+
+
+
+
+</td>
+
+<td>
+	<table border="0" bordercolor="blue">
+						<tr>
+
+					<td width="180">
+			    	</td>
+					<td align="left"></td>
+					<td rowspan="2" valign="top" align="middle">
+				
+
+				<script language="JavaScript">
+						<!--
+						var months=new Array(13);
+						months[1]="January";
+						months[2]="February";
+						months[3]="March";
+						months[4]="April";
+						months[5]="May";
+						months[6]="June";
+						months[7]="July";
+						months[8]="August";
+						months[9]="September";
+						months[10]="October";
+						months[11]="November";
+						months[12]="December";
+						var time=new Date();
+						var lmonth=months[time.getMonth() + 1];
+						var date=time.getDate();
+						var year=time.getYear();
+						if (year < 2000)
+						year = year + 1900;
+						document.write("<br>" + lmonth + " ");
+						document.write(date + ", " + year + "<br>");
+						// -->
+				</script>
+				<table border=0 cellPadding=0 cellSpacing=0 bordercolor=yellow>
+<tr>
+<td>
+<center><a HREF="http://www.incasdelperu.com/volunteers.htm"  target=_blank><img src="titu/tvolu.gif" border=0></center>
+<center><img src="titu/volunteer.jpg" border=0></center>
+<center><img src="titu/thebest.gif" border=0><br></a>
+<a HREF="http://www.incasdelperu.com/cgi-bin/Incas_Album.pl?album=Volunteers"  target=_blank ><font color="chocolate" size="2"><U>Photos Click Here</U></FONT> </a><br>
+<B><a HREF="http://www.incasdelperu.com/volunteers.htm"  target=_blank> More information ...</B> </a></center></td>
+</tr>
+			
+<tr>
+<td>
+
+</td>
+</tr>
+</table><br>
+<table>
+<tr>
+<td>
+<A HREF="http://www.incasdelperu.com/jungle.htm"  target=_blank>
+<center>
+<img src="titu/jungle.gif" border=0><br>
+<IMG  hspace=0 src="titu/soga.jpg" width=140 height=199 border=0><br>
+<a HREF="http://www.incasdelperu.com/cgi-bin/Incas_Album.pl?album=High_Jungle_Trips"  target=_blank ><font color="chocolate" size="2"><U>Photos Click Here</U></FONT> </a>
+<b></b><br>
+<a HREF="http://www.incasdelperu.com/jungle.htm"  target=_blank><B> More information ...</B> </a></center>
+</td>
+<tr>
+<tr>
+<td>
+<A HREF="http://www.incasdelperu.com/Mountain.htm"  target=_blank>
+<center>
+<U><B><img src="titu/caminoh.gif" border=0></font></B></U>
+<IMG  hspace=0 src="titu/camino_huanca_hyo.jpg"  border=0 height=140><br>
+<a HREF="http://www.incasdelperu.com/cgi-bin/Incas_Album.pl?album=Camino_Huanca"  target=_blank ><font color="chocolate" size="2"><U>Photos Click Here</U></FONT> </a>
+<b></b><br>
+<a HREF="http://www.incasdelperu.com/Mountain.htm"  target=_blank><B> More information ...</B> </a></center><br>
+</td>
+</tr>
+
+</table>
+<br>
+<table>
+
+
+			<tr>
+			<td>
+			<center><img src="titu/payments.gif" border=0></center>
+			<table border=0 CELLPADDING="0" CELLSPACING="0">
+<tr>
+<td colspan=4>
+<center><a href="http://www.paypal.com" target=_blank><IMG src="images/PPglobal.jpg" alt="PayPal" border=0></a> </center>
+</td>
+</tr>
+<tr>
+<td>
+<IMG src="images/logo_ccVisa.gif" alt="Visa">
+</td>
+<td>
+<IMG src=" images/logo_ccMC.gif" alt="Mastercard" >
+</td>
+<td>
+   <IMG src="images/logo_ccAmex.gif" alt="American Express">
+</td>
+<td>
+ <IMG src="images/logo_ccDiscover.gif" alt="Discovery" >
+</td>
+</tr>
+
+<tr>
+<td colspan=4>
+<center><a href="http://www.incasdelperu.com/contactvbcp.htm" target=_blank><IMG src="images/bcp.jpg" alt="Banco de Credito" border=0></a> </center>
+</td>
+</tr>
+
+
+<tr>
+<td colspan=4>
+<center><a href="http://www.westernunion.com/info/selectCountry.asp" target=_blank><IMG src="titu/westernunion.jpg"  alt="Western Union" border=0></a> </center>
+</td>
+</tr>
+<tr>
+<td colspan=4><br>
+<center><img src="titu/licensed.gif" border=0></center>
+<a href="http://www.peru.info/s_ftossttbusqueda.asp?tb=agen&ic=1&cl=1&ct=0&ts=1&xdDpto=Junin&consulta=submit&clasif=&txtclasif=Todos&dDpto=Junin&txtCampo=Incas+del+Peru" target=_blank><center><img src="titu/promperu.jpg" border=0></a></center>
+<center><img src="titu/mincetur.jpg" border=0></center>
+<center><img src="titu/mined.jpg" border=0></center>
+<center><img src="titu/resolucion.jpg" border=0></center>
+<center><img src="titu/logohuancayo.jpg" border=0></center>
+
+
+</td>
+
+</tr>
+
+
+
+</table>	
+			</td>
+			</tr>
+			</table>
+
+				
+			</td>
+		</tr>
+		<tr>
+            <td align="left" valign="top" colSpan="2">
+	<center><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+              codebase="http://active.macromedia.com/flash4/cabs/swflash.cab#version=4,0,0,0"
+              id="Movie1"   width="379" height="77">
+              <param name="movie" value="flash/flashoriginal.swf">
+              <param name="quality" value="high">
+              <param name="bgcolor" value="#FFFFFF">
+              <embed name="Movie1" src="flash/flashoriginal.swf" quality="high" bgcolor="#FFFFFF"
+                 width="379" height="77"
+                type="application/x-shockwave-flash"
+                pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+              </embed>
+            </object>     </center>
+   <br><br>
+
+			<font color=chocolate><strong>INCAS DEL PERU</strong></font> is a full-service<font color="chocolate"><strong>
+				TRAVEL</font></strong></font> and <font color="chocolate"><strong>LEARNING
+				</strong></font> </font> center, based in Huancayo, Peru. We cater to those travelers who
+				want to do more than look at monuments, but who really want
+				to get to know new people,  cultures and the country. <br>
+				<br>
+				Whether you join us for a trip or stay to take one of our courses,
+				you will participate in the real life of fascinating people.  Our
+				goal is to create a bridge of friendship and understanding between
+				travelers and the genuine Peruvian culture. <br>
+				<br>
+				<table>
+				 <tr><td><center>
+            		<object id="ShockwaveFlash2" style="LEFT: 0px; TOP: 0px"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" height="70" width="190" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT><param NAME="_cx" VALUE="4736"><param NAME="_cy" VALUE="1852"><param NAME="FlashVars" VALUE="4736"><param NAME="Movie" VALUE="flash/incasperu.swf"><param NAME="Src" VALUE="flash/incasperu.swf"><param NAME="WMode" VALUE="Window"><param NAME="Play" VALUE="-1"><param NAME="Loop" VALUE="-1"><param NAME="Quality" VALUE="High"><param NAME="SAlign" VALUE><param NAME="Menu" VALUE="0"><param NAME="Base" VALUE><param NAME="Scale" VALUE="ShowAll"><param NAME="DeviceFont" VALUE="0"><param NAME="EmbedMovie" VALUE="0"><param NAME="BGColor" VALUE><param NAME="SWRemote" VALUE>
+	                <embed src="flash/incasperu.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" WIDTH="190" HEIGHT="70">                </object></center>
+	                </td>
+	                <td valign=bottom align=left>
+	                <font size=3>Offers to Travelers:</font>
+	                </td>
+	             </tr>
+	            </table>
+	            <br>
+	            <blockquote>
+					<li>
+					    <a href="language.htm"><font color=chocolate align=left><strong><u>CULTURAL COURSES</u></strong></font></a>, in Spanish, Peruvian cooking, Quechua, gourd carving, weaving, dancing, and other traditional Peruvian arts.</li>
+					<li>
+					<a href="TripList.htm"><font color=chocolate><strong><u>ADVENTURE TRIPS</u></strong></font></a> to the mountains and jungle.</li>
+					<li>
+					<a href="service.htm"><font color=chocolate><strong><u>TRAVEL SERVICES</u></strong></font></a>, including bookings for flights, tours and hotels all over Peru.</li>
+					<li>
+				        <a href="InfoFact.htm"><font color=chocolate><strong><u>TRAVEL INFORMATION</u></strong></font></a> for both the Huancayo area and the rest of Peru.</li>
+					<li>
+				 	<a href="volunteers.htm"><font color=chocolate><strong><u>VOLUNTEER OPPORTUNITIES</u></strong></font></a>, either with INCAS or with local charitable institutions in Huancayo.</li>
+				</blockquote>
+                <font color=chocolate><strong>INCAS</strong></font> also offers you the benefits of more than
+                20 years of guiding experience and cultural exchange undertaken by our founder, <a href="founder.htm"><font color=chocolate><strong><u>Lucho Hurtado</u></font></strong></a>.
+                <br>
+                <br>
+                <strong><font color="chocolate">WELCOME TO OUR WEBSITE</font></strong>
+                . We hope you will find it useful and fun. Please feel free to send
+                us your comments and suggestions - we really do appreciate your
+                input!<br>
+                <br>
+                
+               <center> <!--
+<img src="titu/welcometo.jpg" border=0><br> <b><a  class="red" href="http://www.incasdelperu.com/casa.htm" target=_blank>>> Visit us <<</a></b><br>
+          <strong>
+
+<font color="chocolate">YOUR HOME AWAY FROM HOME . . !!!</font><br>
+
+<a href="casa.htm" target=_blank><img  src="fotos/casau.jpg" border="0"></a>
+</font>
+<center>-->
+
+<font color="chocolate"><b><center>THE HISTORICAL HIGHEST TRAIN IN THE WORLD IS RUNNING AGAIN!</b></font><br>
+		<font color="chocolate"><b>Departure:</b></font> <b>November 28th - 2008</b><br>
+		<b><a  class="red" href="statusofthetrain.htm" target=_blank>>> For more info click here <<</a></b><br>
+</center>
+
+<A href="javascript:openimage('fotos/trenhuancayo_g.jpg','Incas del Peru',466,319)"><img  src="fotos/trenhuancayo_c.jpg" border="0"></a>
+
+</center><br>
+
+
+<table border="0" cellPadding="1" cellSpacing="1" bordercolor=blue valign=top width=100%>
+			<tr>
+				<td bordercolor="white" colspan=4>
+<center><img src="titu/we.gif" border=0></center><br>
+				<a href="recommend.htm#reise">
+					<center><img alt="Reise Know How" src="titu/guidebooks.jpg" border="0" width=400></center>
+				</td>
+				
+			</tr>
+         <tr >
+           	<td bordercolor="white" colspan="5">
+	<center><a href="recommend.htm#times"><img alt="Times on Line" src="titu/TimesLogo.jpg" border="0" ></a>
+<a href="recommend.htm#road"><img alt="One for the Road" src="titu/road.jpg" border="0"></center></a></td>
+         </tr>
+<tr>
+           	<td bordercolor="white" colspan="4"><a href="recommend.htm#eisenbahn">
+<center><img alt="Eisenbahn-Kurier" src="titu/eisenbahn-kurier.jpg"  border="0"></a>
+		<a href="recommend.htm#viva"><img alt="Guia Viva - Peru" src="titu/vivalogo.jpg" border=0></a></center></td>
+</tr>
+<tr align=center>
+
+		<td colspan="4">
+<A HREF="http://www.incasdelperu.com/allnews.htm"  target=_blank><img alt="Kansai Scene " src="images/logokansai.jpg"  border="0"></a><br>
+
+        </td>
+           <p>&nbsp;</p>
+		</td>
+	</tr>
+<tr>
+<td><br>
+<center><img src="titu/contact.gif" border=0>
+<center><img src="titu/reservations.jpg" border=0>
+<center>
+
+
+<center>
+<a class="red" title="Send EMail" href="mailto:incasdelperu@gmail.com">
+<img src="titu/emails.gif" border=0>
+<center><img src="titu/emailus.jpg" border=0></a><br>
+<a class="red" title="Send EMail" href="mailto:travelinfo@incasdelperu.org">
+<img src="titu/letra.jpg" border=0></a>
+
+<center><img src="titu/stop.jpg" border=0>
+<center><img src="titu/address.jpg" border=0>
+<center><img src="titu/days.jpg" border=0>
+<center><img src="titu/hours1.jpg" border=0></a>
+<center><img src="titu/buy.jpg" border=0></center>
+
+</td>
+</tr>
+
+	</table></center>
+
+
+
+</center><br>
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="3"></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+			</td>
+		</tr>
+	
+	 
+	<tr>
+	<td></td></tr>
+		</table>
+		<table border="0" cellPadding="1" cellSpacing="1" width="50%">
+		<tr>
+	       	 <td align="left">
+		     <hr color="#cccccc" noShade SIZE="1" width="480">
+		</td></tr>
+		<tr>
+	           <td align="middle">
+			<font color="#808080" size="-1">
+			© Copyright 2004 Incas del Peru. All
+			Rights Reserved.&nbsp; </font><br>
+		    </td>
+		</tr>
+		</table>	</td>
+	</tr>
+</table>
+<br>
+<br>
+</center>
+</body>
+</html>
